@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +8,14 @@
   <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
   <style>
     * { margin:0; padding:0; box-sizing:border-box; }
+
     body {
       font-family:'Poppins',sans-serif;
-      background: linear-gradient(135deg,#ff9ec4,#c084fc);
-      color:white;
+      background: linear-gradient(135deg,#4c1d95,#7e22ce,#d946ef);
+      color:#ffffff;
       overflow-x:hidden;
     }
+
     .hero {
       min-height:100vh;
       display:flex;
@@ -22,6 +25,7 @@
       text-align:center;
       padding:20px;
     }
+
     .hero img {
       width:220px;
       height:220px;
@@ -31,35 +35,41 @@
       box-shadow:0 10px 30px rgba(0,0,0,0.25);
       margin-bottom:20px;
     }
+
     h1 {
       font-family:'Dancing Script',cursive;
       font-size:3.8rem;
       margin-bottom:10px;
     }
+
     .subtitle {
       font-size:1.4rem;
       font-weight:600;
       margin-bottom:20px;
     }
+
     .message {
       max-width:900px;
-      background:rgba(255,255,255,0.18);
+      background:rgba(255,255,255,0.28);
       padding:25px;
       border-radius:25px;
       backdrop-filter: blur(12px);
       line-height:1.8;
-      box-shadow:0 8px 25px rgba(0,0,0,0.15);
+      box-shadow:0 8px 25px rgba(0,0,0,0.25);
       margin:10px;
     }
+
     .gallery, .surprise {
       padding:60px 20px;
       text-align:center;
     }
+
     .gallery h2, .surprise h2 {
       font-family:'Dancing Script',cursive;
       font-size:3rem;
       margin-bottom:30px;
     }
+
     .gallery-grid, .surprise-grid {
       display:grid;
       grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
@@ -67,6 +77,7 @@
       max-width:1100px;
       margin:auto;
     }
+
     .gallery-grid img {
       width:100%;
       height:280px;
@@ -75,15 +86,18 @@
       box-shadow:0 8px 20px rgba(0,0,0,0.2);
       transition:transform 0.4s ease;
     }
+
     .gallery-grid img:hover {
       transform:scale(1.05);
     }
+
     .footer {
       text-align:center;
       padding:30px;
       font-size:1.1rem;
       font-weight:600;
     }
+
     .heart {
       position:fixed;
       color:#fff;
@@ -92,123 +106,109 @@
       opacity:0.7;
       pointer-events:none;
     }
+
     @keyframes float {
       from { transform:translateY(100vh) scale(0.5); }
       to { transform:translateY(-10vh) scale(1.2); }
     }
+
     .music-btn {
       margin-top:20px;
       padding:12px 24px;
       border:none;
       border-radius:30px;
-      background:white;
-      color:#d946ef;
+      background:#ffffff;
+      color:#7e22ce;
       font-weight:bold;
       cursor:pointer;
       font-size:1rem;
-      box-shadow:0 5px 15px rgba(0,0,0,0.15);
+      box-shadow:0 5px 15px rgba(0,0,0,0.2);
     }
+
     .music-btn:hover {
       transform:scale(1.05);
     }
+
     @media(max-width:768px){
       h1 { font-size:2.8rem; }
       .hero img { width:180px; height:180px; }
     }
   </style>
 </head>
-<body><section class="hero">
-  <img src="meghu-main-photo.jpg" alt="Meghu Photo">
+
+<body>
+
+<section class="hero">
+  <img src="meghu-main-photo.jpeg" alt="Meghu Photo">
   <h1>Happy Birthday Meghu 🎂</h1>
-  <div class="subtitle">Meghusubhu Forever 💖</div>  <div class="message">
+  <div class="subtitle">Meghusubhu Forever 💖</div>
+
+  <div class="message">
     Happy Birthday to the most amazing friend (Meghusubhu Forever) 💖<br><br>
     May your life always be filled with happiness, success, laughter, love and beautiful memories ✨<br><br>
     Keep smiling because your smile makes the world brighter 🌸<br><br>
     On your special day, I wish you endless joy, peace, good health and success in everything you do 🎉<br><br>
     May every moment of your life become beautiful and unforgettable just like today 💕<br><br>
     Keep shining, keep smiling, always stay happy and Badabhai blessed u 🎁
-  </div><button class="music-btn" onclick="document.getElementById('music').play()">Play Birthday Music 🎶</button>
+  </div>
 
-</section><section class="gallery">
+  <button class="music-btn" onclick="document.getElementById('music').play()">Play Birthday Music 🎶</button>
+</section>
+
+<section class="gallery">
   <h2>Beautiful Memories 📸</h2>
   <div class="gallery-grid">
-    <img src="gallery1.jpg" alt="Memory 1">
-    <img src="gallery2.jpg" alt="Memory 2">
-    <img src="gallery3.jpg" alt="Memory 3">
-    <img src="gallery4.jpg" alt="Memory 4">
-    <img src="gallery5.jpg" alt="Memory 5">
-    <img src="gallery6.jpg" alt="Memory 6">
+    <img src="gallery1.jpeg" alt="Memory 1">
+    <img src="gallery2.jpeg" alt="Memory 2">
+    <img src="gallery3.jpeg" alt="Memory 3">
+    <img src="gallery4.jpeg" alt="Memory 4">
+    <img src="gallery5.jpeg" alt="Memory 5">
+    <img src="gallery6.jpeg" alt="Memory 6">
   </div>
-</section><section class="surprise">
+</section>
+
+<section class="surprise">
   <h2>Special Surprise Messages 🎁</h2>
   <div class="surprise-grid">
-    <div class="message">💌 You are not just my best friend, you are one of the most precious blessings in my life.</div>
+    <div class="message">💌 You are not just my friend, you are one of the most precious blessings in my life.</div>
     <div class="message">🌟 No matter what happens, Meghusubhu Forever will always remain special.</div>
     <div class="message">🎂 May this birthday bring you endless happiness, laughter and success.</div>
     <div class="message">💕 Stay the same beautiful soul who makes every moment brighter.</div>
-    <div class="message">
-      <pre style="white-space: pre-wrap; font-family: 'Poppins', sans-serif; color: white; text-align: left; line-height: 1.8;">
-ପ୍ରଥମ ଦେଖା ତ ଅଚିହ୍ନା ଥିଲା 
-ଜାଣି ନଥିଲି ମୁଁ ତତେ,
-ଜାଣିବାକୁ ଯେବେ ସୁଯୋଗ ପାଇଲି
-ଅନୁଭବ ଭଲ ନଥିଲା ସେତେ ।
 
-ଦିନ ପରେ ଦିନ ବିତି ଯାଉଥିଲା 
-ସମୟ ବହି ଯାଉଥିଲା ସୁଅରେ, 
-ଅନୁଭବକୁ ବି ଅନୁଭବ ହେଲା 
-ଯେବେ ଦେଖୁଥିଲି ତତେ ପ୍ରତି କ୍ଷଣରେ।
+    <div class="message">ତୋ ପାଇଁ କବିତା<br>ପ୍ରଥମ ଦେଖା ତ ଅଚିହ୍ନା ଥିଲା <br>ଜାଣି ନଥିଲି ମୁଁ ତତେ,<br>ଜାଣିବାକୁ ଯେବେ ସୁଯୋଗ ପାଇଲି<br>ଅନୁଭବ ଭଲ ନଥିଲା ସେତେ ।</div>
 
-ଚେଷ୍ଟା କରୁଥିଲି ଜାଣିବାକୁ ତୁ କିଏ ? 
-କ'ଣ ଚାଲିଛି ତୋ ମନରେ, 
-ଯେବେ ଲାଗୁଥିଲା ବୁଝିଛି ତତେ 
-ପକାଇ ଦେଉଥିଲୁ ଦ୍ୱନ୍ଦରେ।
+    <div class="message">ଦିନ ପରେ ଦିନ ବିତି ଯାଉଥିଲା <br>ସମୟ ବହି ଯାଉଥିଲା ସୁଅରେ,<br>ଅନୁଭବକୁ ବି ଅନୁଭବ ହେଲା <br>ଯେବେ ଦେଖୁଥିଲି ତତେ ପ୍ରତି କ୍ଷଣରେ।</div>
 
-ଦ୍ବିତୀୟ ବର୍ଷରେ ସମାନ ବିଭାଗରେ 
-ଯବେ ବେଞ୍ଚ ସେୟାର କଲୁ 
-ମୋ ପାଇଁ ଖାସ୍ ତ ଥିଲା, 
-କେବେ ମୁଁ ତତେ ମୋ ସାଙ୍ଗର ସ୍ଥାନ ଦେଲି 
-ତାହା ମୋତେ ବି ଅଜଣା ଥିଲା।
+    <div class="message">ଚେଷ୍ଟା କରୁଥିଲି ଜାଣିବାକୁ ତୁ କିଏ ?<br>କ'ଣ ଚାଲିଛି ତୋ ମନରେ,<br>ଯେବେ ଲାଗୁଥିଲା ବୁଝିଛି ତତେ <br>ପକାଇ ଦେଉଥିଲୁ ଦ୍ୱନ୍ଦରେ।</div>
 
-ବିଶ୍ୱାସ ଭରା ଏ ସମ୍ପର୍କ ଭିତରେ 
-ରାଗ ଅଭିମାନ ତ ଥିଲା, 
-ଜଣକୁ ଯଦି ଆଘାତ ଲାଗେ 
-କଷ୍ଟ ଅନ୍ୟ ଜଣେ ଅନୁଭବ କରୁଥିଲା।
+    <div class="message">ଦ୍ବିତୀୟ ବର୍ଷରେ ସମାନ ବିଭାଗରେ <br>ଯବେ ବେଞ୍ଚ ସେୟାର କଲୁ<br>ମୋ ପାଇଁ ଖାସ୍ ତ ଥିଲା,<br>କେବେ ମୁଁ ତତେ ମୋ ସାଙ୍ଗର ସ୍ଥାନ ଦେଲି<br>ତାହା ମୋତେ ବି ଅଜଣା ଥିଲା।</div>
 
-ହଷ୍ଟେଲ ଦୁନିଆ ତୋ ପାଇଁ ନଥିଲା ସହଜ 
-ଏ କଥା ତ ମୁଁ ଜାଣିଛି, 
-ତା'ଭିତରେ ନିଜକୁ କିପରି ଗଢିଲୁ 
-ଏ ଆଖି ମୋର ସବୁ ଦେଖିଛି।
+    <div class="message">ବିଶ୍ୱାସ ଭରା ଏ ସମ୍ପର୍କ ଭିତରେ <br>ରାଗ , ଅଭିମାନ ତ ଥିଲା,<br>ଜଣକୁ ଯଦି ଆଘାତ ଲାଗେ<br>କଷ୍ଟ ଅନ୍ୟ ଜଣେ ଅନୁଭବ କରୁଥିଲା।</div>
 
-ବନ୍ଧୁତାର ଏଇ ବନ୍ଧନକୁ ତୁ 
-ପରିବାର ନାଁ ଦେଇଛୁ, 
-କଥା ଦେଉଛି ସାଥ୍ ଛାଡ଼ିବିନି 
-ଯଦି ଏ ଦ୍ୱନ୍ଦରେ କେବେ ରହିଛୁ।
+    <div class="message">ହଷ୍ଟେଲ ଦୁନିଆ ତୋ ପାଇଁ ନଥିଲା ସହଜ<br>ଏ କଥା ତ ମୁଁ ଜାଣିଛି,<br>ତା' ଭିତରେ ନିଜକୁ କିପରି ଗଢିଲୁ<br>ଏ ଆଖି ମୋର ସବୁ ଦେଖିଛି।</div>
 
-ଆଖପାଖର ଭଲ ଗୁଣକୁ 
-ଖୋଜି ଖୋଜି ସାଉଁଟିବୁ, 
-ଜୀବନକୁ ତୋର ସରସ ସୁନ୍ଦର 
-ପ୍ରେରଣାଦାୟୀ କରି ଗଢ଼ିବୁ।
+    <div class="message">ବନ୍ଧୁତାର ଏଇ ବନ୍ଧନକୁ ତୁ<br>ପରିବାର ନାଁ ଦେଇଛୁ,<br>କଥା ଦେଉଛି ସାଥ୍ ଛାଡ଼ିବିନି <br>ଯଦି ଏ ଦ୍ୱନ୍ଦରେ କେବେ ରହିଛୁ।</div>
 
-ସବୁବେଳେ କହୁଥିଲୁ ମୋ ପାଇଁ 
-କବିତା ଗୋଟେ ଲେଖିବୁ, 
-ଆଶା କରୁଛି ଏ କବିତା ପଢ଼ି 
-ମୁହଁରେ ହସ ଟିକେ ଆଣିବୁ।
+    <div class="message">ଆଖପାଖର ଭଲ ଗୁଣକୁ <br>ଖୋଜି ଖୋଜି ସାଉଁଟିବୁ,<br>ଜୀବନକୁ ତୋର ସରସ ସୁନ୍ଦର <br>ପ୍ରେରଣାଦାୟୀ କରି ଗଢ଼ିବୁ।</div>
 
-                                ତୋର ସାଙ୍ଗ
-                                ଶୁଭଶ୍ରୀ (ଚୁଇଁ)
-  </pre>
+    <div class="message">ସବୁବେଳେ କହୁଥିଲୁ ମୋ ପାଇଁ <br>କବିତା ଗୋଟେ ଲେଖିବୁ,<br>ଆଶା କରୁଛି ଏ କବିତା ପଢ଼ି <br>ମୁହଁରେ ହସ ଟିକେ ଆଣିବୁ।<br><br>ତୋର ସାଙ୍ଗ<br>ଶୁଭଶ୍ରୀ (ଚୁଇଁ)</div>
+  </div>
+</section>
+
+<div class="footer">
+  Made with endless friendship & love 💕<br>
+  Forever friend 🌸
 </div>
 
-  </div>
-</section><div class="footer">
-  Made with endless friendship & love 💕<br>
-  Forever Best Friends 🌸
-</div><audio id="music" loop>
-  <source src="birthday-song.mp3" type="audio/mp3">
-</audio><script>
+<audio id="music" loop>
+  <source src="sajde-song.mp3" type="audio/mp3">
+</audio>
+
+<script>
   function launchConfetti() {
     confetti({ particleCount: 200, spread: 120, origin: { y: 0.6 } });
   }
+
   launchConfetti();
 
   setInterval(() => {
@@ -220,5 +220,7 @@
     document.body.appendChild(heart);
     setTimeout(() => heart.remove(), 8000);
   }, 500);
-</script></body>
+</script>
+
+</body>
 </html>
